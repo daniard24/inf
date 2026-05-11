@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Mapping Informatika Kelas XI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:
+    radial-gradient(circle at top left,#1e3a8a,#0f172a 45%),
+    radial-gradient(circle at bottom right,#6d28d9,#111827 50%);
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px 30px;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    background:linear-gradient(to right,#38bdf8,#a78bfa,#f472b6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    margin-top:12px;
+    color:#cbd5e1;
+    font-size:1rem;
+}
+
+.container{
+    width:100%;
+    max-width:1500px;
+    margin:auto;
+    padding:20px;
+}
+
+.mindmap{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:430px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(14px);
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,0.35);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card-header{
+    padding:22px;
+    cursor:pointer;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.card-header h2{
+    font-size:1.5rem;
+}
+
+.card-content{
+    display:none;
+    padding:22px;
+}
+
+.topic{
+    margin-bottom:18px;
+    background:rgba(255,255,255,0.04);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.topic-title{
+    padding:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.topic-title:hover{
+    background:rgba(255,255,255,0.08);
+}
+
+.topic-detail{
+    display:none;
+    padding:0 18px 18px;
+}
+
+.subtopic{
+    background:rgba(255,255,255,0.05);
+    padding:18px;
+    border-radius:18px;
+    margin-top:14px;
+    line-height:1.7;
+}
+
+.subtopic h3{
+    margin-bottom:10px;
+    color:#93c5fd;
+}
+
+.cp-box{
+    margin-top:10px;
+    padding:14px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.06);
+    font-size:0.92rem;
+}
+
+.cp-box ul{
+    padding-left:18px;
+    margin-top:8px;
+}
+
+.resources{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+    gap:10px;
+    margin-top:15px;
+}
+
+.resource{
+    background:linear-gradient(135deg,#0ea5e9,#6366f1);
+    padding:10px;
+    border-radius:12px;
+    text-align:center;
+    font-size:0.85rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.resource:hover{
+    transform:scale(1.05);
+}
+
+.icon{
+    transition:0.3s;
+}
+
+.rotate{
+    transform:rotate(90deg);
+}
+
+.footer{
+    text-align:center;
+    padding:40px;
+    color:#cbd5e1;
+    font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>📘 Informatika Kelas XI</h1>
+    <p>Mind Mapping Interaktif • CP • ATP • Perangkat Pembelajaran</p>
+
+</header>
+
+<div class="container">
+
+<div class="mindmap">
+
+<!-- SEMESTER 1 -->
+<div class="card">
+
+    <div class="card-header" onclick="toggleCard(this)">
+        <h2>🟦 Semester 1</h2>
+    </div>
+
+    <div class="card-content">
+
+        <!-- BAB 1 -->
+        <div class="topic">
+
+            <div class="topic-title" onclick="toggleTopic(this)">
+                <span>📖 Informasi Digital</span>
+                <span class="icon">▶</span>
+            </div>
+
+            <div class="topic-detail">
+
+                <div class="subtopic">
+
+                    <h3>🔎 Menggunakan Mesin Pencari</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu menggunakan mesin pencari
+                            untuk riset digital secara efektif dan bertanggung jawab.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Memahami konsep mesin pencari</li>
+                            <li>Menggunakan teknik pencarian informasi</li>
+                            <li>Mengevaluasi hasil pencarian</li>
+                            <li>Menggunakan pencarian untuk riset</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+                <div class="subtopic">
+
+                    <h3>📰 Evaluasi Informasi Digital</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu mengevaluasi validitas
+                            informasi digital menggunakan teknik membaca lateral.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Memahami hoaks dan disinformasi</li>
+                            <li>Menerapkan triangulasi informasi</li>
+                            <li>Melakukan reverse image search</li>
+                            <li>Mengevaluasi sumber digital</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BAB 2 -->
+        <div class="topic">
+
+            <div class="topic-title" onclick="toggleTopic(this)">
+                <span>📊 Analisis Data</span>
+                <span class="icon">▶</span>
+            </div>
+
+            <div class="topic-detail">
+
+                <div class="subtopic">
+
+                    <h3>📈 Visualisasi Data</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu mengolah dan
+                            memvisualisasikan data secara logis.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Memahami konsep data</li>
+                            <li>Mengolah data sederhana</li>
+                            <li>Membuat visualisasi data</li>
+                            <li>Mengambil kesimpulan dari data</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SEMESTER 2 -->
+<div class="card">
+
+    <div class="card-header" onclick="toggleCard(this)">
+        <h2>🟪 Semester 2</h2>
+    </div>
+
+    <div class="card-content">
+
+        <!-- BAB 3 -->
+        <div class="topic">
+
+            <div class="topic-title" onclick="toggleTopic(this)">
+                <span>🧠 Strategi Algoritmik</span>
+                <span class="icon">▶</span>
+            </div>
+
+            <div class="topic-detail">
+
+                <div class="subtopic">
+
+                    <h3>🔁 Rekursi & Algoritma</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu menerapkan strategi algoritmik
+                            untuk menyelesaikan masalah komputasional.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Memahami rekursi</li>
+                            <li>Menerapkan greedy algorithm</li>
+                            <li>Memahami dynamic programming</li>
+                            <li>Menyusun solusi algoritmik</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BAB 4 -->
+        <div class="topic">
+
+            <div class="topic-title" onclick="toggleTopic(this)">
+                <span>📱 App Inventor & AI</span>
+                <span class="icon">▶</span>
+            </div>
+
+            <div class="topic-detail">
+
+                <div class="subtopic">
+
+                    <h3>🤖 Artificial Intelligence</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu membuat aplikasi sederhana
+                            berbasis AI menggunakan App Inventor.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Mengenal AI sederhana</li>
+                            <li>Memahami klasifikasi gambar</li>
+                            <li>Menggunakan App Inventor</li>
+                            <li>Membuat aplikasi AI sederhana</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BAB 5 -->
+        <div class="topic">
+
+            <div class="topic-title" onclick="toggleTopic(this)">
+                <span>🌐 Jaringan Komputer</span>
+                <span class="icon">▶</span>
+            </div>
+
+            <div class="topic-detail">
+
+                <div class="subtopic">
+
+                    <h3>🖧 Konfigurasi & Keamanan Jaringan</h3>
+
+                    <div class="cp-box">
+
+                        <strong>🎯 CP</strong>
+                        <p>
+                            Peserta didik mampu memahami konsep jaringan
+                            komputer dan melakukan konfigurasi sederhana.
+                        </p>
+
+                        <br>
+
+                        <strong>🧭 ATP</strong>
+
+                        <ul>
+                            <li>Memahami topologi jaringan</li>
+                            <li>Mengenal perangkat jaringan</li>
+                            <li>Konfigurasi IP Address</li>
+                            <li>Menerapkan keamanan jaringan dasar</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="resources">
+                        <div class="resource">📘 RPP</div>
+                        <div class="resource">📗 Modul</div>
+                        <div class="resource">📝 LKPD</div>
+                        <div class="resource">🎥 Media</div>
+                        <div class="resource">📊 Asesmen</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+    Dibuat berdasarkan Buku Informatika SMA/MA Kelas XI Kurikulum Merdeka
+</div>
+
+<script>
+
+function toggleCard(element){
+
+    let content = element.nextElementSibling;
+
+    if(content.style.display === "block"){
+        content.style.display = "none";
+    }else{
+        content.style.display = "block";
+    }
+
+}
+
+function toggleTopic(element){
+
+    let detail = element.nextElementSibling;
+    let icon = element.querySelector('.icon');
+
+    if(detail.style.display === "block"){
+        detail.style.display = "none";
+        icon.classList.remove("rotate");
+    }else{
+        detail.style.display = "block";
+        icon.classList.add("rotate");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
